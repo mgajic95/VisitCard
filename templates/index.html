@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Milan Gajic</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<section id="main">
+				<header>
+					<span class="avatar"><img src="static/images/avatar.jpg" alt="" /></span>
+					<h1>Milan Gajic</h1>
+					<p>Python and Web Developer</p>
+					<a href="{{ url_for('download') }}">Download CV</a>
+				</header>
+				<hr />
+				<div class="contact">
+					<h4>Contact Me:</h4>
+					<a href="tel:+381638106922">Phone</a><br>
+					<a href="mailto:mgajic21234@gmail.com">Email</a>
+				</div>
+				<hr />
+				<footer>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/milan-gaji%C4%87-4126a5268/" class="fa-linkedin">Linkedin</a></li>
+						<li><a href="https://www.instagram.com/m.gajic?igsh=MWoxcTNkbTEyODc0eg%3D%3D&utm_source=qr" class="fa-instagram">Instagram</a></li>
+						<li><a href="https://www.facebook.com/milan.gajic1/" class="fa-facebook">Facebook</a></li>
+					</ul>
+				</footer>
+			</section>
+			<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; Milan Gajic</li>
+				</ul>
+			</footer>
+		</div>
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			}
+		</script>
+	</body>
+</html>
