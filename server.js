@@ -22,12 +22,12 @@ app.get("/download", (req, res) => {
 
 app.get('/static/assets/css/main.css', (req, res) => {
     res.set('Content-Type', 'text/css');
-    res.sendFile(path.join(__dirname, 'public', 'static', 'assets', 'css', 'main.css'));
+    res.sendFile(path.join(__dirname,  'static', 'assets', 'csss', 'main.css'));
 });
 
 
 app.get('/static/images/avatar.jpg', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'static', 'images', 'avatar.jpg'));
+    res.sendFile(path.join(__dirname,  'static', 'images', 'avatar.jpg'));
 });
 
 const PORT = process.env.PORT || 5003;
