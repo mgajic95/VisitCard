@@ -11,7 +11,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'templates', 'index.html'));
+    res.sendFile(path.join(__dirname,  'index.html'));
 });
 
 app.get("/download", (req, res) => {
@@ -19,13 +19,14 @@ app.get("/download", (req, res) => {
     res.download(filePath);
 });
 
-
-app.get('/static/assets/css/main.css', (req, res) => {
+app.get('/static/assets/csss/main.css', (req, res) => {
     res.set('Content-Type', 'text/css');
-    res.sendFile(path.join(__dirname,  'static', 'assets', 'csss', 'main.css'));
+    res.sendFile(path.join(__dirname, 'static', 'assets', 'csss', 'main.css'));
 });
-
-
+app.get('/static/assets/csss/font-awesome.min.css', (req, res) => {
+    res.set('Content-Type', 'text/css');
+    res.sendFile(path.join(__dirname, 'static', 'assets', 'csss', 'font-awesome.min.css'));
+});
 app.get('/static/images/avatar.jpg', (req, res) => {
     res.sendFile(path.join(__dirname,  'static', 'images', 'avatar.jpg'));
 });
