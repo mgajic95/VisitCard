@@ -21,11 +21,11 @@ app.get("/download", (req, res) => {
 
 app.get('/static/assets/csss/main.css', (req, res) => {
     res.set('Content-Type', 'text/css');
-    res.sendFile(path.join(__dirname, 'static', 'assets', 'csss', 'main.css'));
+    res.sendFile(path.join(__dirname, 'static', 'assets', 'css', 'main.css'));
 });
 app.get('/static/assets/csss/font-awesome.min.css', (req, res) => {
     res.set('Content-Type', 'text/css');
-    res.sendFile(path.join(__dirname, 'static', 'assets', 'csss', 'font-awesome.min.css'));
+    res.sendFile(path.join(__dirname, 'static', 'assets', 'css', 'font-awesome.min.css'));
 });
 app.get('/static/images/avatar.jpg', (req, res) => {
     res.sendFile(path.join(__dirname,  'static', 'images', 'avatar.jpg'));
